@@ -17,8 +17,8 @@ public class EditorTexto {
 
     public void desfazer() {
         if (!pilhaDesfazer.estaVazia()) {
-            pilhaRefazer.empilhar(textoAtual); // Salva estado atual
-            textoAtual = pilhaDesfazer.desempilhar(); // Recupera estado anterior
+            pilhaRefazer.empilhar(textoAtual); 
+            textoAtual = pilhaDesfazer.desempilhar(); 
         } else {
             System.out.println("Nada para desfazer.");
         }
@@ -26,8 +26,8 @@ public class EditorTexto {
 
     public void refazer() {
         if (!pilhaRefazer.estaVazia()) {
-            pilhaDesfazer.empilhar(textoAtual); // Salva estado atual
-            textoAtual = pilhaRefazer.desempilhar(); // Recupera estado futuro
+            pilhaDesfazer.empilhar(textoAtual); 
+            textoAtual = pilhaRefazer.desempilhar(); 
         } else {
             System.out.println("Nada para refazer.");
         }
@@ -37,8 +37,8 @@ public class EditorTexto {
         System.out.println("Texto atual: " + textoAtual);
     }
 
-    // Método auxiliar para manter capacidade da pilhaRefazer
+    
     private int pilhaRefazerCapacidade() {
-        return 10; // Pode ajustar se quiser uma capacidade diferente
+        return 10; 
     }
 }

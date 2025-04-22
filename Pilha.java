@@ -2,13 +2,13 @@ public class Pilha {
     private String[] elementos;
     private int topo;
 
-    // Construtor: define o tamanho da pilha
+    
     public Pilha(int capacidade) {
         elementos = new String[capacidade];
-        topo = -1; // começa vazia
+        topo = -1; 
     }
 
-    // Empilha um novo elemento no topo
+    
     public void empilhar(String item) {
         if (topo < elementos.length - 1) {
             topo++;
@@ -18,7 +18,7 @@ public class Pilha {
         }
     }
 
-    // Desempilha o elemento do topo
+    
     public String desempilhar() {
         if (!estaVazia()) {
             String item = elementos[topo];
@@ -30,12 +30,12 @@ public class Pilha {
         }
     }
 
-    // Verifica se a pilha está vazia
+    
     public boolean estaVazia() {
         return topo == -1;
     }
 
-    // Retorna o elemento no topo sem remover (opcional)
+    
     public String verTopo() {
         if (!estaVazia()) {
             return elementos[topo];

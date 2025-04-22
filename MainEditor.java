@@ -15,7 +15,7 @@ public class MainEditor{
             System.out.println("0 - Sair");
             System.out.print("Escolha uma opção: ");
             opcao = scanner.nextInt();
-            scanner.nextLine(); // limpar buffer
+            scanner.nextLine(); 
 
             switch (opcao) {
                 case 1:
